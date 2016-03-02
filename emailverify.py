@@ -7,7 +7,6 @@ __email__ = "eugen_k69@yahoo.com"
 import requests
 import datetime
 import pycurl
-from StringIO import StringIO
 
 
 class EmailListVerifyOne():
