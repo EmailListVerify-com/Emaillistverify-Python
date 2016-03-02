@@ -6,7 +6,6 @@ __email__ = "eugen_k69@yahoo.com"
 
 import requests
 import datetime
-import pycurl
 
 
 class EmailListVerifyOne():
@@ -34,6 +33,7 @@ class EmailListVerifyBulk():
 
 
     def upload(self):
+        import pycurl
         
         infile = open('id_file', 'w')
         c = pycurl.Curl()
