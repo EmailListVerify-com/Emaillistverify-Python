@@ -6,6 +6,7 @@ __email__ = "eugen_k69@yahoo.com"
 
 import requests
 import datetime
+import pycurl
 from StringIO import StringIO
 
 
@@ -32,8 +33,8 @@ class EmailListVerifyBulk():
         self.user_file = user_file
         self.url = 'https://app.emaillistverify.com/api/verifApiFile?secret='+key+'&filename=%s' % self.name
 
+
     def upload(self):
-        import pycurl
         
         infile = open('id_file', 'w')
         c = pycurl.Curl()
@@ -50,6 +51,7 @@ class EmailListVerifyBulk():
 
 
     def get_info(self):
+       
         with open('id_file','r') as f:
             ids = f.read()
         url = 'https://app.emaillistverify.com/api/getApiFileInfo?secret='+self.key+'&id=%s' % ids
@@ -60,9 +62,4 @@ class EmailListVerifyBulk():
 
 
 if __name__ == '__main__':
-    # E = EmailListVerifyOne('dV4YFp8o4Gan3hCN3XMAb', 'test69@yahoo.com')
-    # print E.control()  
-    B = EmailListVerifyBulk('dV4YFp8o4Gan3hCN3XMAb', 'test.xml')
-    # B.upload() #for check of example uncoment this line just one time, when your file will be upload coment this again        
-    B.get_info()
     pass
