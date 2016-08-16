@@ -30,4 +30,4 @@ this is api for emaillistverify.com
                     |https://app.emaillistverify.com/app/webroot/files/4195/6565/result_all_6565_2016-02-25.csv
 #Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Eugenk69/app_emailistverify_com-. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+ This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
